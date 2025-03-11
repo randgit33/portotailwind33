@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes tailwind</title>
+</head>
+<body class="overflow-hidden">
+        
+        <!-- header + navbar    -->
+        <header class="w-full flex justify-center header sticky top-0 bg-current shadow-md flex items-center  px-8 py-02">
+            <nav class="font-semibold text-lg">
+              <ul class="flex justify-center space-x-8">
+                <li class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-500 duration-200 cursor-pointer">
+                  <a href="testailwind.html" >Home</a>
+                </li>
+                <li class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-500 duration-200 cursor-pointer">
+                  <a href="tailwindabout.html">About</a>
+                </li>
+                <li class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-500 duration-200 cursor-pointer">
+                  <a href="tailwindcontact.html">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          
+          <!--background-->
+          <div class="relative h-screen">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0">
+              <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="relative z-10 flex h-full flex-col items-center justify-center px-4">
+              <div class="max-w-3xl text-center">
+                <h1 class="mb-8 text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl text-white">
+                  Testing Project
+                  <span class="text-sky-400">Tailwind</span>
+                </h1>
+                <p class="mx-auto mb-8 max-w-2xl text-lg text-slate-300">
+                  Just a bored informatics engineering student that test every framework and library that can run on this crappy laptop that's bound to explode anytime soon
+                </p>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    <!--Script-->
+    <script src="testtawilwind.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</body>
+</html>

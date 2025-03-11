@@ -1,0 +1,101 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contacts</title>
+        </head>
+        <body class="overflow-hidden">
+        
+            <!--background-->
+         <div class="relative h-screen">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0">
+              <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+            </div>     
+        
+            <!-- header + navbar    -->
+        <header class="w-full flex justify-center header sticky top-0 bg-current shadow-md flex items-center  px-8 py-02">
+            <nav class="font-semibold text-lg">
+              <ul class="flex justify-center space-x-8">
+                <li class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-500 duration-200 cursor-pointer">
+                  <a href="testailwind.html" >Home</a>
+                </li>
+                <li class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-500 duration-200 cursor-pointer">
+                  <a href="tailwindabout.html">About</a>
+                </li>
+                <li class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 text-white hover:text-blue-500 duration-200 cursor-pointer">
+                  <a href="tailwindcontact.html">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <!--BG BLUR-->
+          <div class="flex items-center justify-center min-h-screen bg-black/50 backdrop-blur-md p-8">
+            <div class="bg-purple-200/20 backdrop-blur-xl p-10 rounded-2xl shadow-lg">
+                <h1 class="text-2xl font-bold text-white">Dev Contacts</h1>
+                <br>
+
+                <!--icons-->
+                <!--linkedin button-->
+                <button id="openLinkd"
+                class="group w-12 h-12 hover:w-auto hover:bg-blue-600 relative rounded text-neutral-50 duration-500 flex justify-start items-center overflow-hidden transition-all">
+                
+                <!-- Icon -->
+                <div class="w-12 h-12 flex items-center justify-center bg-blue-700 rounded duration-500 group-hover:bg-blue-600">
+                    <svg class="w-8 h-8 fill-neutral-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.79 0s53.79 24.1 53.79 53.79-24.1 54.31-53.79 54.31zM447.2 448h-92.61V302.4c0-34.7-.64-79.3-48.3-79.3-48.3 0-55.6 37.8-55.6 76.9V448H157.4V148.9h88.88v40.9h1.3c12.4-23.4 42.8-48.3 88.12-48.3 94.2 0 111.9 62 111.9 142.6V448z"/>
+                    </svg>
+                </div>
+            
+                <!-- Text + "|" Effect -->
+                <span class="opacity-0 group-hover:opacity-100 scale-x-0 group-hover:scale-x-100 origin-left transition-all duration-300 group-hover:delay-300 border-l-2 px-2">
+                    Lets connect on LinkedIn!
+                </span>
+            </button>
+            
+            <!--ig button-->
+            <button id="openIG"
+            class="group w-12 h-12 hover:w-auto hover:bg-pink-600 relative rounded text-neutral-50 duration-500 flex justify-start items-center overflow-hidden transition-all">
+            
+            <!-- Icon -->
+            <div class="w-12 h-12 flex items-center justify-center bg-pink-700 rounded duration-500 group-hover:bg-pink-600">
+                <svg class="w-8 h-8 fill-neutral-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.36,53.36,0,0,0,224,202.66ZM370.76,80H77.24A77.28,77.28,0,0,0,0,157.24V354.76A77.28,77.28,0,0,0,77.24,432H370.76A77.28,77.28,0,0,0,448,354.76V157.24A77.28,77.28,0,0,0,370.76,80ZM224,338.66A82.67,82.67,0,1,1,306.66,256,82.69,82.69,0,0,1,224,338.66Zm126.05-175.1A17.71,17.71,0,1,1,374.76,145.9,17.71,17.71,0,0,1,350.05,163.56Z"/>
+                </svg>
+            </div>
+        
+            <!-- Text + "|" Effect -->
+            <span class="opacity-0 group-hover:opacity-100 scale-x-0 group-hover:scale-x-100 origin-left transition-all duration-300 group-hover:delay-300 border-l-2 px-2">
+                Follow Me on Instagram!
+            </span>
+        </button>
+        
+            <!--github button-->
+            <button id="openGIT"
+            class="group w-12 h-12 hover:w-auto hover:bg-gray-800 relative rounded text-neutral-50 duration-500 flex justify-start items-center overflow-hidden transition-all">
+            
+            <!-- Icon -->
+            <div class="w-12 h-12 flex items-center justify-center bg-gray-900 rounded duration-500 group-hover:bg-gray-800">
+                <svg class="w-8 h-8 fill-neutral-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.385.6.11.793-.26.793-.577V20.2c-3.34.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.805 1.304 3.49.997.107-.775.418-1.304.762-1.603-2.665-.303-5.467-1.333-5.467-5.933 0-1.31.467-2.382 1.237-3.22-.124-.303-.536-1.523.117-3.172 0 0 1.008-.322 3.3 1.23A11.465 11.465 0 0 1 12 5.8c1.02.005 2.04.137 3 .402 2.29-1.553 3.295-1.23 3.295-1.23.655 1.65.243 2.87.12 3.172.77.838 1.235 1.91 1.235 3.22 0 4.613-2.805 5.626-5.478 5.92.43.373.814 1.104.814 2.22v3.293c0 .32.19.693.8.577C20.565 21.8 24 17.3 24 12 24 5.373 18.627 0 12 0z"/>
+                </svg>
+            </div>
+        
+            <!-- Text + "|" Effect -->
+            <span class="opacity-0 group-hover:opacity-100 scale-x-0 group-hover:scale-x-100 origin-left transition-all duration-300 group-hover:delay-300 border-l-2 px-2">
+                View My GitHub!
+            </span>
+        </button>
+                        </div>
+                    </div>
+    
+
+
+                 
+              <!--Script-->
+              <script src="testtailwind.js"></script>
+              <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </body>
+</html>
